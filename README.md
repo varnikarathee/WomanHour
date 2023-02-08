@@ -12,7 +12,7 @@
 - Sends Last Known Location to registered mobile
 - Now we can add multiple contacts to send SOS
 
-##Concepts used :
+## Concepts used :
 - Android Studio
 - Realtime Room Database
 - Google Map Locating sharing 
