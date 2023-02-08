@@ -1,19 +1,8 @@
-# ⚡ Spark Women - A Women Safety Application
-## _Feel Safe Everywhere_
-
-
-Women Safety App is user friendly application built in Android Studio,
-it is simple to implement,easy to understand.
-
-Demo Download App : [Click Here](https://drive.google.com/file/d/1ZWB_HUyxm86T6GtpMhTWbOwuw6i7G4Wp/view?usp=sharing)
-
-[<img src="media/SPARKWOMEN.png" />](https://t.me/vinayak_09)
-
-
+# WomenHour 
+##### A platform build for all females, to approach in emergency. The app allows females to alert their relatives or closed ones by either pressing the emergency button or shaking the phone (in case of extreme unsafety), which in turn shares the user location along with a pre formatted help message. 
 
 
 ## Features
-
 - Easy to implement
 - Easy to understand
 - Shake detector
@@ -23,24 +12,8 @@ Demo Download App : [Click Here](https://drive.google.com/file/d/1ZWB_HUyxm86T6G
 - Sends Last Known Location to registered mobile
 - Now we can add multiple contacts to send SOS
 
-#### Prerequisites :
+#### Concepts used :
 - Android Studio
-- Basic knowledge about Firebase Authentication and Realtime database.
-## Build and Run Application
-
-###### SparkWomen A Women Safety Application requires Android Oreo or newer version to run.
-Follow this steps to get Working Project!
-```
-Clone this repository or download file
-Extract zip if downloaded code
-Open project in Android Studio
-Wait while Android Studio Download gradle or required files
-Hit Run Button !
-```
-
-------------
-
-Full Project demonstration Youtube :<br>
-Link - https://youtu.be/NkE4sxeAfFE
-
-**Free Software, Hell Yeah!**
+- Realtime Room Database
+- Google Map Locating sharing 
+- Firebase Authentication
