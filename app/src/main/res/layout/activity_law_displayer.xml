@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LawDisplayerActivity"
+    android:background="#717DC8">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FEMALE RIGHTS IN SOCIETY"
+        android:layout_above="@id/bigLaws"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/lawString"
+        />
+    <TextView
+        android:id="@+id/bigLaws"
+        android:layout_width="350dp"
+        android:layout_height="530dp"
+        android:layout_above="@id/lastLinear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/back_screen"
+        android:padding="20dp"
+        android:textSize="15sp"
+        android:text="According to the International Research Centre for Women, almost 47 percent of girls are married before the age of 18. Currently, India ranks 13 in the world when it comes to child marriages. Since child marriage has been steeped into the Indian culture and tradition since centuries, it has been tough eliminating it.
+
+The Prohibition of Child Marriage Act was made effective in 2007. This act defines child marriage as a marriage where the groom or the bride are underage, that is, the bride is under 18 years of age or the boy is younger than 21 years.
+
+Parents trying to marry underage girls are subject to action under this law. Since the law makes these marriages illegal, it acts as a major deterrent."
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastLinear"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/backBtn"
+            android:background="@drawable/btn_back"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:background="@drawable/btn_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/nextBtn"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

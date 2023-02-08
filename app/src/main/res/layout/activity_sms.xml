@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmsActivity"
+    android:background="#717DC8">
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/back_screen"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/li"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="123dp"
+            android:text="MULTIPLE SMS ALERTS"
+            android:textAlignment="center"
+            android:textColor="#19235E"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/li"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106dp"
+        android:text="Wanna send multiple SMS alerts? \n click on Start SMS ALERTS , else press STOP."
+        android:textStyle="bold"
+        android:textColor="#323130"
+        android:textSize="15sp" />
+    <LinearLayout
+        android:id="@+id/li"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginStart="80dp"
+        >
+
+
+        <Button
+            android:id="@+id/startService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_back"
+            android:text="Start SMS Alerts" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop SMS Alerts "
+            android:backgroundTint="#6973AF"
+            android:id="@+id/stopService"
+            android:background="@drawable/btn_back"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

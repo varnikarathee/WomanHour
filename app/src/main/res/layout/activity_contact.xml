@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactActivity"
+    android:background="#717DC8">
+
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="640dp"
+        android:layout_above="@id/callingInfo"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/rel"
+        android:background="@drawable/back_screen">
+
+        <LinearLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emergency Contacts :"
+                android:textColor="#3A4063"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="Police : 100"
+                android:textColor="#3A4063"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="Ambulance : 101"
+                android:textColor="#3A4063"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="Fire brigade : 102"
+                android:textColor="#3A4063"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contactText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topBar"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:text="Contact to send SOS "
+            android:textColor="#3A4063"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/contacts"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/contactText"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/callingInfo"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_above="@id/bottomLayout"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:layout_toStartOf="@id/callingInfo"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#C8CBDD"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/callText"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:text=""/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp">
+
+
+        <EditText
+            android:id="@+id/contactGet"
+            android:layout_width="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginEnd="10dp"
+            android:hint="Contact Number"
+            android:textColorHint="#BCBCB2" />
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginLeft="50dp"
+           android:layout_toRightOf="@id/contactGet"
+           >
+        <Button
+            android:id="@+id/addContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_back"
+            android:backgroundTint="#6973AF"
+            android:text="Add" />
+
+        <ImageView
+            android:id="@+id/editCallButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@id/addContact"
+            android:src="@drawable/ic_baseline_edit_24" />
+
+       </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
