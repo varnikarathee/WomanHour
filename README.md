@@ -12,8 +12,13 @@
 - Sends Last Known Location to registered mobile
 - Now we can add multiple contacts to send SOS
 
-#### Concepts used :
+##Concepts used :
 - Android Studio
 - Realtime Room Database
 - Google Map Locating sharing 
 - Firebase Authentication
+
+## Demo of the app:
+
+https://user-images.githubusercontent.com/77229404/217580018-3eef5e4d-3e20-471c-84c1-aae188cb5a2c.mp4
+
